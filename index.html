@@ -140,14 +140,15 @@
       </ul>
 
       <h2>三、第三方服务</h2>
-      <p>本应用会在查询日期信息时，向以下第三方接口发起仅包含<strong>日期参数</strong>的网络请求，用于判断某日是工作日、周末还是法定节假日：</p>
+      <p>本应用会按设备所选国家/地区，向以下节假日数据源发起网络请求，用于判断某日是工作日、周末还是法定节假日：</p>
       <ul>
-        <li>节假日查询接口（timor.tech，HTTPS）</li>
+        <li>中国大陆：节假日查询接口（timor.tech，HTTPS），请求仅包含<strong>日期参数</strong></li>
+        <li>中国大陆以外的国家/地区：节假日数据源（date.nager.at，HTTPS），请求仅包含<strong>所选国家/地区码与年份</strong>（首次启动时按设备区域设置自动判定一次，判定结果仅保存在本机，不与任何身份信息关联）</li>
       </ul>
       <p>这些请求<strong>不包含</strong>您的任何个人身份信息、位置信息或打卡数据，查询结果仅缓存在您的设备本地。</p>
 
       <h2>四、信息共享</h2>
-      <p>我们<strong>不会</strong>向任何第三方出售、出租或共享您的个人信息。除上述日期查询接口外，本应用不与任何第三方传输数据。</p>
+      <p>我们<strong>不会</strong>向任何第三方出售、出租或共享您的个人信息。除上述节假日数据源外，本应用不与任何第三方传输数据。</p>
 
       <h2>五、数据安全</h2>
       <ul>
@@ -176,7 +177,7 @@
 
     <div id="lang-en" class="en">
       <h1>Bee Check-In Privacy Policy</h1>
-      <p class="subtitle">Last Updated: September 21, 2026</p>
+      <p class="subtitle">Last Updated: September 23, 2026</p>
 
       <p>We (the individual developer of 蜜蜂打卡 (Bee Check-In), "we") deeply value your privacy. Please read this policy carefully before using the app.</p>
 
@@ -204,7 +205,12 @@
       </ul>
 
       <h2>3. Third-Party Services</h2>
-      <p>To determine whether a given date is a workday, weekend, or Chinese public holiday, the app sends network requests containing <strong>only the date parameter</strong> to the holiday query API (timor.tech, HTTPS). These requests contain <strong>no</strong> personal information, location data, or check-in records, and results are cached on your device only.</p>
+      <p>Depending on the country/region set on the device, the app sends network requests to the following holiday data sources to determine whether a given date is a workday, weekend, or public holiday:</p>
+      <ul>
+        <li>Mainland China: Holiday query API (timor.tech, HTTPS) — requests contain <strong>only the date parameter</strong></li>
+        <li>All other countries/regions: Holiday data source (date.nager.at, HTTPS) — requests contain <strong>only the selected country/region code and the year</strong> (auto-detected once from the device's region setting at first launch; the result is stored on your device only and never linked to your identity)</li>
+      </ul>
+      <p>These requests contain <strong>no</strong> personal information, location data, or check-in records, and results are cached on your device only.</p>
 
       <h2>4. Information Sharing</h2>
       <p>We will <strong>never</strong> sell, rent, or share your personal information with any third party.</p>
